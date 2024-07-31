@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightPath Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BrightPath Education</h1>
+    </header>
+    <main>
+        <p>BrightPath Education is dedicated to providing the best educational services to our students.</p>
+        <input type="text" id="userInput" placeholder="Enter your name">
+        <button onclick="displayGreeting()">Submit</button>
+        <section id="result"></section>
+    </main>
+    <footer>
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+            <button type="button" onclick="cancelFeedback()">Cancel</button>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
